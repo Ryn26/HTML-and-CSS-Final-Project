@@ -1,0 +1,97 @@
+.caveat {
+    font-family: "Caveat", cursive;
+    font-optical-sizing: auto;
+    font-weight: bold;
+    font-style: normal;
+  }
+.grid-section {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+@media (min-width: 768px) {
+    .grid-section {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+@media (min-width: 1024px) {
+    .grid-section {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 10px;
+        border: .7px rgba(0, 0, 0, 0.479) solid;
+        padding: 9px;
+        border-radius: 10px;
+    }
+}
+h1 {
+    font-size: 40px;
+    text-shadow: 4px 4px 4px rgb(255, 255, 255);
+    letter-spacing: 4px;
+    border-radius: 10px;
+}
+nav ul {
+    list-style: none;
+    padding-left: 10px;
+}
+nav ul li {
+    display: inline;
+    margin-right: 40px;
+}
+nav ul li a {
+    text-decoration: none;
+    color: black;
+}
+nav ul li a:hover {
+    color: rgb(202, 253, 255);
+}
+img {
+    max-width: 100%;
+    height: 200px;
+    border: 2px black dashed;
+    box-shadow: 4px 4px 4px 4px rgba(0, 0, 0, 0.507);
+}
+
+p {
+    font-size: 25px;
+    border: 2px black dashed;
+    padding: 20px;
+    background-color: rgb(161, 255, 255);
+    border-radius: 15px;
+}
+
+body{
+    background-color: rgb(152, 255, 241);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+}
+article{
+    box-shadow: 4px 4px 4px 4px #00000077;
+}
+.icon-bar {
+    position: relative;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: auto;
+}
+.icon-bar a {
+    float: left;
+    text-align: center;
+    width: 25%;
+    padding: 12px 0;
+    transition: all 0.3s ease;
+    color: rgb(0, 0, 0);
+    font-size: 36px;
+}
+.icon-bar a:hover {
+    color: #111111;
+    background-color: #ffffff;
+}
+@keyframes color-cycle {
+    0% { color: rgb(0, 247, 255); }
+    33.33% { color: rgb(0, 173, 179); }
+    66.66% { color: rgb(0, 90, 94); }
+    100% { color: rgb(0, 247, 255); }
+}
+.color-change {
+    animation: color-cycle 5s infinite;
+}

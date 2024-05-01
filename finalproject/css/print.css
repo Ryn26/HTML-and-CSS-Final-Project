@@ -1,0 +1,42 @@
+/* Hide images */
+img {
+    display: none;
+}
+
+/* Hide nav */
+nav {
+    display: none;
+}
+
+/* Text styles */
+body {
+    color: black;
+    font-size: 12pt;
+}
+
+/* Reset styles */
+* {
+    margin: 0;
+    padding: 0;
+    border: none;
+    background: none;
+    box-shadow: none;
+}
+
+/* Links in content areas */
+article a {
+    text-decoration: underline;
+    color: black;
+    display: block;
+}
+
+/* Force block display */
+section {
+    display: block;
+}
+script{
+    display: none;
+}
+.icon-bar{
+    display: none;
+}
